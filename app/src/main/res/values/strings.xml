@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FirebaseAuthenticationDemo</string>
+    <string name="open_login_google">Open Login Google</string>
 </resources>
