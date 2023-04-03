@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -38,10 +39,21 @@ class LoginGoogleAct: AppCompatActivity() {
         findViewById<SignInButton>(R.id.sign_in_button).setOnClickListener {
             signIn()
         }
+
+        // Logout Google
+        findViewById<TextView>(R.id.tvLogoutGoogle).setOnClickListener {
+            signOut()
+        }
+    }
+
+    private fun signOut() {
+        mGoogleSignInClient.signOut().addOnCompleteListener {
+            Log.e("Logger Logout", it.isComplete.toString())
+        }
     }
 
     private fun signIn() {
-        val signInIntent: Intent = mGoogleSignInClient.getSignInIntent()
+        val signInIntent: Intent = mGoogleSignInClient.signInIntent
         startActivityForResult(signInIntent, rcSignIn)
     }
 
