@@ -41,6 +41,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    // Authentication
+    // Authentication Google
     implementation 'com.google.android.gms:play-services-auth:20.4.1'
+
+    // Authentication Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:12.3.0'
+    // When not contains PendingIntent use library here
+    implementation('androidx.work:work-runtime:2.7.1')
+
 }

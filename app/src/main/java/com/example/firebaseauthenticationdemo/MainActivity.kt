@@ -16,5 +16,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginGoogleAct::class.java))
         }
 
+        findViewById<TextView>(R.id.tvOpenLoginFacebook).setOnClickListener {
+            startActivity(Intent(this, LoginFacebookAct::class.java))
+        }
+
     }
 }

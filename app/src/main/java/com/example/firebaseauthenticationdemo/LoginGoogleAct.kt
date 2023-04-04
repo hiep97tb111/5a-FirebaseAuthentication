@@ -73,10 +73,10 @@ class LoginGoogleAct: AppCompatActivity() {
             val personName: String? = acct.displayName
             val personGivenName: String? = acct.givenName
             val personFamilyName: String? = acct.familyName
-            val personEmail: String? = acct.getEmail()
+            val personEmail: String? = acct.email
             val personId: String? = acct.id
             val personPhoto: Uri? = acct.photoUrl
-            Log.e("Logger", personEmail.toString()+"/"+personName+"/"+personPhoto)
+            Log.e("Logger", "$personEmail/$personName/$personPhoto/$personId")
         }
     }
 

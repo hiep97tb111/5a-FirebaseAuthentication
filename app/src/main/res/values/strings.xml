@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FirebaseAuthenticationDemo</string>
     <string name="open_login_google">Open Login Google</string>
+    <string name="facebook_app_id">1624442664650230</string>
+    <string name="fb_login_protocol_scheme">fb1624442664650230</string>
+    <string name="facebook_client_token">452e2bbe7211ccf220c0bdc31a3401d4</string>
 </resources>
