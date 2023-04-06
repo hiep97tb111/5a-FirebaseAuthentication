@@ -60,8 +60,7 @@ class LoginGoogleAct: AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...)
-        // The Task returned from this call is always completed, no need to attach
-        // a listener.
+        // The Task returned from this call is always completed, no need to attach a listener.
         if (requestCode === rcSignIn) {
             val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
             handleSignInResult(task)
