@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.firebaseauthenticationdemo">
+    package="com.example.integratedSdkGoogleFacebook">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -16,7 +16,7 @@
         <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.integratedSdkGoogleFacebook.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,10 +25,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginGoogleAct"
+        <activity android:name="com.example.integratedSdkGoogleFacebook.LoginGoogleAct"
             android:exported="true"/>
 
-        <activity android:name=".LoginFacebookAct"
+        <activity android:name="com.example.integratedSdkGoogleFacebook.LoginFacebookAct"
             android:exported="true"/>
 
 

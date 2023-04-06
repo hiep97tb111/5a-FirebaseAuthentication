@@ -1,4 +1,4 @@
-package com.example.firebaseauthenticationdemo
+package com.example.integratedSdkGoogleFacebook
 
 import org.junit.Test
 

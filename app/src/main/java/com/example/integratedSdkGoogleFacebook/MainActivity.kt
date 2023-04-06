@@ -1,4 +1,4 @@
-package com.example.firebaseauthenticationdemo
+package com.example.integratedSdkGoogleFacebook
 
 import android.content.Intent
 import android.os.Bundle
